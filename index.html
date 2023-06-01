@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+<body>
+  <header>
+    <h1>Simple, traffic-based pricing</h1>
+    <p>Sign-up for our 30-day trial. No credit card required.</p>
+  </header>
+  
+  <section class="main-section">
+    <div class="top-div">
+    <div class="pageviews">
+      <h2><span class="pv-span">100K</span> Pageviews</h2>
+    </div>
+    <div class="price-container">
+      <h3>
+        <span class="price">$16.00</span>
+        <span class="month-span"> / month</span>
+      </h3>
+    </div>
+  </div>
+    <div class="slide-container">
+      <input type="range" min="1" max="5" value="3" aria-valuemin="1" aria-valuemax="5" aria-valuenow="3" class="slider" id="slider">
+    </div>
+    <div class="month-year">
+      <p class="month">Monthly Billing</p>
+      <div class="toggle-switch">
+        <label class="switch">
+          <input id="interval-switch" type="checkbox"
+          aria-checked="false" aria-label="yearly payment interval toggle switch" />
+          <span class="toggle-slider round"></span>
+        </label>
+      </div>
+      <p class="year">Yearly Billing<span class="yr-span">-25%</span><span class="yr-span2">25% discount</span>
+      </p>
+    </div>
+    <div class="line"></div>
+    <section class="bottom">
+    <div class="list">
+      <ul>
+        <li><i class="tick"><img src="icon-check.svg" alt=""></i>Unlimited websites</li>
+        <li><i class="tick"><img src="icon-check.svg" alt=""></i>100% data ownership</li>
+        <li><i class="tick"><img src="icon-check.svg" alt=""></i>Email reports</li>
+      </ul>
+    </div>
+    <div class="start">
+      <button class="start-btn">Start my trial</button>
+    </div>
+
+  </section>
+  </section>
+   
+
+  
+  
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/Le-Paih">Luis Le Paih</a>.
+  </div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
